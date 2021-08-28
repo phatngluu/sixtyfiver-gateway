@@ -5,7 +5,7 @@ RUN npm -g install npm@6.14.14
 WORKDIR /usr/local/app
 COPY ./sixtyfiver-app /usr/local/app/
 RUN npm install
-RUN npm run build
+RUN npm run build:prod
 
 # Stage 2: Serve app with nginx server
 FROM nginx:latest
