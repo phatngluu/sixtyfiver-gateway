@@ -1,0 +1,6 @@
+[submodule "sixtyfiver-app"]
+	path = sixtyfiver-app
+	url = https://github.com/phatngluu/sixtyfiver-app.git
+[submodule "pethernet"]
+	path = pethernet
+	url = https://github.com/phatngluu/pethernet.git
