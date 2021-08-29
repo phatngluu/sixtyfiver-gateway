@@ -17,7 +17,7 @@ services:
       - public:/tmp/public
 
   sixtyfiver-gateway:
-    build: .
+    image: yadsendewlung/sixtyfiver-gateway:latest
     ports:
       - "8080:${SIXTYFIVER_PORT}"
     environment:
