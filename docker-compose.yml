@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   pethernet:
-    build: pethernet
+    build: yadsendewlung/sixtyfiver-pethernet:latest
     ports:
       - "5000:${PETHERNET_PORT}"
     environment:
@@ -28,20 +28,6 @@ services:
       - PETHERNET_PORT=${PETHERNET_PORT}
     volumes:
       - public:/tmp/public
-
-  # socketio-server:
-  #   build: ./services/socketio-server
-  #   ports:
-  #     - "5050:5000"
-  #   environment:
-  #     - NODE_ENV=test
-  #     - DB_USERNAME=postgres
-  #     - DB_PASSWORD=admin1234
-  #     - DB_NAME=tests
-  #     - DB_HOST=timescaledb
-  #     - DB_PORT=5432
-  #   volumes:
-  #     - public:/tmp/public
 volumes:
   public:
   data:
