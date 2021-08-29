@@ -33,4 +33,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platform: darwin,linux/arm64v8,linux/amd64
+          platforms: darwin,linux/arm64v8,linux/amd64
