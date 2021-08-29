@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   pethernet:
-    build: yadsendewlung/sixtyfiver-pethernet:latest
+    image: yadsendewlung/sixtyfiver-pethernet:latest
     ports:
       - "5000:${PETHERNET_PORT}"
     environment:
